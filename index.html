@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bugs to test in Minecraft to report in Mojira!" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="icon" href="./assets/logo.png" />
+    <title>Bug Testing List</title>
+  </head>
+  <body class="m-3">
+    <h1 class="display-3">Bug Testing List</h1>
+    <p class="text-secondary fs-4">Bugs to test in Minecraft to report in Mojira!</p>
+
+    <section class="p-5" id="docs">
+      <div class="container-lg">
+        <nav class="mt-3">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="nav-entities-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-entities"
+              type="button"
+              role="tab"
+              aria-controls="nav-entities"
+              aria-selected="true"
+            >
+              Entities
+            </button>
+            <button
+              class="nav-link"
+              id="nav-blocks-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-blocks"
+              type="button"
+              role="tab"
+              aria-controls="nav-blocks"
+              aria-selected="false"
+            >
+              Blocks
+            </button>
+            <button
+              class="nav-link"
+              id="nav-items-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-items"
+              type="button"
+              role="tab"
+              aria-controls="nav-items"
+              aria-selected="false"
+            >
+              Items
+            </button>
+            <button
+              class="nav-link"
+              id="nav-effects-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-effects"
+              type="button"
+              role="tab"
+              aria-controls="nav-effects"
+              aria-selected="false"
+            >
+              Effects
+            </button>
+            <button
+              class="nav-link"
+              id="nav-structures-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-structures"
+              type="button"
+              role="tab"
+              aria-controls="nav-structures"
+              aria-selected="false"
+            >
+              Structures
+            </button>
+            <button
+              class="nav-link"
+              id="nav-world-gen-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-world-gen"
+              type="button"
+              role="tab"
+              aria-controls="nav-world-gen"
+              aria-selected="false"
+            >
+              World Generation
+            </button>
+          </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active p-3"
+            id="nav-entities"
+            role="tabpanel"
+            aria-labelledby="nav-entities-tab"
+          >
+            <section class="p-5 pt-4 bg-light">
+              <div class="container-lg">
+                <div>
+                  <h2>Entities</h2>
+                </div>
+
+                <div class="container">
+                  <div class="row row-cols-1 row-cols-md-3 entity-bugs">
+                    <div class="col-lg-4 d-flex align-items-stretch" data-id="${id}">
+                      <div class="card rounded-2 shadow m-3">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            <span class="text-muted">Creeper</span>
+                          </h5>
+                          
+                          <p class="card-text">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                              <li>Porro quam consequatur molestiae tenetur ratione odio unde ipsam accusantium repellendus odit! Vero voluptate tempora ab repudiandae iusto debitis sint molestiae deserunt!</li>
+                            </ul>
+                          </p>
+                        </div>
+                        <div class="card-footer text-muted bg-light">
+                          <span class="me-3">Bugs found: <strong>5</strong></span>
+
+                          <button
+                            class="btn btn-primary btn-sm"
+                            data-id="${id}"
+                            title="Found bug relating to this (vote)"
+                            data-type="button"
+                          >
+                            <i class="bi bi-plus-lg"></i>
+                          </button>
+
+                          <div class="btn-group mx-4" role="group">
+                            <button class="btn btn-success btn-sm" data-bs-toggle="modal" id="edit" data-bs-target="#staticBackdrop" title="Edit"><i class="bi bi-pencil"></i></button>
+                            <button class="btn btn-danger btn-sm" id="delete" title="Delete"><i class="bi bi-trash"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div
+            class="tab-pane fade p-3"
+            id="nav-blocks"
+            role="tabpanel"
+            aria-labelledby="nav-blocks-tab"
+          >
+            <section class="p-5 pt-4 bg-light">
+              <div class="container-lg">
+                <div>
+                  <h2>Blocks</h2>
+                </div>
+
+                <div class="container">
+                  <div class="row row-cols-1 row-cols-md-3 entity-bugs">
+                    <div class="col-lg-4 d-flex align-items-stretch" data-id="${id}">
+                      <div class="card rounded-2 shadow m-3">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            <span class="text-muted">Crafting Table</span>
+                          </h5>
+                          
+                          <p class="card-text">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                              <li>Porro quam consequatur molestiae tenetur ratione odio unde ipsam accusantium repellendus odit! Vero voluptate tempora ab repudiandae iusto debitis sint molestiae deserunt!</li>
+                            </ul>
+                          </p>
+                        </div>
+                        <div class="card-footer text-muted bg-light">
+                          <span class="me-3">Bugs found: <strong>5</strong></span>
+
+                          <button
+                            class="btn btn-primary btn-sm"
+                            data-id="${id}"
+                            title="Found bug relating to this (vote)"
+                            data-type="button"
+                          >
+                            <i class="bi bi-plus-lg"></i>
+                          </button>
+
+                          <div class="btn-group mx-4" role="group">
+                            <button class="btn btn-success btn-sm" data-bs-toggle="modal" id="edit" data-bs-target="#staticBackdrop" title="Edit"><i class="bi bi-pencil"></i></button>
+                            <button class="btn btn-danger btn-sm" id="delete" title="Delete"><i class="bi bi-trash"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
